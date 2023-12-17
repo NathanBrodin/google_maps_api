@@ -1,0 +1,31 @@
+name: google_maps_api_example
+description: Demomstrates how to use the google_maps_api package.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  flutter_dotenv: ^5.1.0
+  google_maps_flutter: ^2.5.0
+  google_maps_api:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env

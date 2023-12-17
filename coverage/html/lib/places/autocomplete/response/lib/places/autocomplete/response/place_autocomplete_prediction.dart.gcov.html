@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - lcov.info - lib/places/autocomplete/response/lib/places/autocomplete/response/place_autocomplete_prediction.dart</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../gcov.css">
+</head>
+
+<body>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="title">LCOV - code coverage report</td></tr>
+            <tr><td class="ruler"><img src="../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+            <tr>
+              <td width="100%">
+                <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="10%" class="headerValue"><a href="../../../../../../../../index.html">top level</a> - <a href="index.html">lib/places/autocomplete/response/lib/places/autocomplete/response</a> - place_autocomplete_prediction.dart<span style="font-size: 80%;"> (source / <a href="place_autocomplete_prediction.dart.func-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="5%"></td>
+            <td width="5%" class="headerCovTableHead">Coverage</td>
+            <td width="5%" class="headerCovTableHead" title="Covered + Uncovered code">Total</td>
+            <td width="5%" class="headerCovTableHead" title="Exercised code only">Hit</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">lcov.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntryMed">87.0&nbsp;%</td>
+            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntry">20</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test Date:</td>
+            <td class="headerValue">2023-12-15 22:20:57</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntryHi">-</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+          </tr>
+                  <tr><td><img src="../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td class="ruler"><img src="../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+          </table>
+
+          <table cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+<pre class="sourceHeading">            Line data    Source code</pre>
+<pre class="source">
+<span id="L1"><span class="lineNum">       1</span>              : import 'package:flutter/foundation.dart';</span>
+<span id="L2"><span class="lineNum">       2</span>              : import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_matched_substring.dart';</span>
+<span id="L3"><span class="lineNum">       3</span>              : import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_structured_format.dart';</span>
+<span id="L4"><span class="lineNum">       4</span>              : import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_term.dart';</span>
+<span id="L5"><span class="lineNum">       5</span>              : import 'package:json_annotation/json_annotation.dart';</span>
+<span id="L6"><span class="lineNum">       6</span>              : </span>
+<span id="L7"><span class="lineNum">       7</span>              : part 'place_autocomplete_prediction.g.dart';</span>
+<span id="L8"><span class="lineNum">       8</span>              : </span>
+<span id="L9"><span class="lineNum">       9</span>              : /// https://developers.google.com/maps/documentation/places/web-service/autocomplete#PlaceAutocompletePrediction</span>
+<span id="L10"><span class="lineNum">      10</span>              : @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)</span>
+<span id="L11"><span class="lineNum">      11</span>              : class PlaceAutocompletePrediction {</span>
+<span id="L12"><span class="lineNum">      12</span>              :   /// Contains the human-readable name for the returned result.</span>
+<span id="L13"><span class="lineNum">      13</span>              :   final String description;</span>
+<span id="L14"><span class="lineNum">      14</span>              : </span>
+<span id="L15"><span class="lineNum">      15</span>              :   /// A list of substrings that describe the location of the entered term in the prediction result text, so that the term can be highlighted if desired.</span>
+<span id="L16"><span class="lineNum">      16</span>              :   final List&lt;PlaceAutocompleteMatchedSubstring&gt; matchedSubstrings;</span>
+<span id="L17"><span class="lineNum">      17</span>              : </span>
+<span id="L18"><span class="lineNum">      18</span>              :   /// Provides pre-formatted text that can be shown in your autocomplete results.</span>
+<span id="L19"><span class="lineNum">      19</span>              :   final PlaceAutocompleteStructuredFormat structuredFormatting;</span>
+<span id="L20"><span class="lineNum">      20</span>              : </span>
+<span id="L21"><span class="lineNum">      21</span>              :   /// Contains an array of terms identifying each section of the returned description (a section of the description is generally terminated with a comma).</span>
+<span id="L22"><span class="lineNum">      22</span>              :   final List&lt;PlaceAutocompleteTerm&gt; terms;</span>
+<span id="L23"><span class="lineNum">      23</span>              : </span>
+<span id="L24"><span class="lineNum">      24</span>              :   /// The straight-line distance in meters from the origin.</span>
+<span id="L25"><span class="lineNum">      25</span>              :   final int? distanceMeters;</span>
+<span id="L26"><span class="lineNum">      26</span>              : </span>
+<span id="L27"><span class="lineNum">      27</span>              :   /// A textual identifier that uniquely identifies a place.</span>
+<span id="L28"><span class="lineNum">      28</span>              :   final String? placeId;</span>
+<span id="L29"><span class="lineNum">      29</span>              : </span>
+<span id="L30"><span class="lineNum">      30</span>              :   /// Contains an array of types that apply to this place.</span>
+<span id="L31"><span class="lineNum">      31</span>              :   /// For example: [ &quot;political&quot;, &quot;locality&quot; ] or [ &quot;establishment&quot;, &quot;geocode&quot;, &quot;beauty_salon&quot; ].</span>
+<span id="L32"><span class="lineNum">      32</span>              :   final List&lt;String&gt;? types;</span>
+<span id="L33"><span class="lineNum">      33</span>              : </span>
+<span id="L34"><span class="lineNum">      34</span> <span class="tlaGNC tlaBgGNC">           5 :   const PlaceAutocompletePrediction({</span></span>
+<span id="L35"><span class="lineNum">      35</span>              :     required this.description,</span>
+<span id="L36"><span class="lineNum">      36</span>              :     required this.matchedSubstrings,</span>
+<span id="L37"><span class="lineNum">      37</span>              :     required this.structuredFormatting,</span>
+<span id="L38"><span class="lineNum">      38</span>              :     required this.terms,</span>
+<span id="L39"><span class="lineNum">      39</span>              :     this.placeId,</span>
+<span id="L40"><span class="lineNum">      40</span>              :     this.distanceMeters,</span>
+<span id="L41"><span class="lineNum">      41</span>              :     this.types,</span>
+<span id="L42"><span class="lineNum">      42</span>              :   });</span>
+<span id="L43"><span class="lineNum">      43</span>              : </span>
+<span id="L44"><span class="lineNum">      44</span> <span class="tlaUNC tlaBgUNC">           0 :   @override</span></span>
+<span id="L45"><span class="lineNum">      45</span> <span class="tlaUNC">           0 :   String toString() =&gt; description;</span></span>
+<span id="L46"><span class="lineNum">      46</span>              : </span>
+<span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC tlaBgGNC">           2 :   factory PlaceAutocompletePrediction.fromJson(Map&lt;String, dynamic&gt; json) =&gt;</span></span>
+<span id="L48"><span class="lineNum">      48</span> <span class="tlaGNC">           2 :       _$PlaceAutocompletePredictionFromJson(json);</span></span>
+<span id="L49"><span class="lineNum">      49</span>              : </span>
+<span id="L50"><span class="lineNum">      50</span> <span class="tlaUNC tlaBgUNC">           0 :   Map&lt;String, dynamic&gt; toJson() =&gt; _$PlaceAutocompletePredictionToJson(this);</span></span>
+<span id="L51"><span class="lineNum">      51</span>              : </span>
+<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC tlaBgGNC">           2 :   @override</span></span>
+<span id="L53"><span class="lineNum">      53</span>              :   bool operator ==(Object other) =&gt;</span>
+<span id="L54"><span class="lineNum">      54</span>              :       identical(this, other) ||</span>
+<span id="L55"><span class="lineNum">      55</span> <span class="tlaGNC">           2 :       other is PlaceAutocompletePrediction &amp;&amp;</span></span>
+<span id="L56"><span class="lineNum">      56</span> <span class="tlaGNC">           6 :           description == other.description &amp;&amp;</span></span>
+<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">           6 :           listEquals(matchedSubstrings, other.matchedSubstrings) &amp;&amp;</span></span>
+<span id="L58"><span class="lineNum">      58</span> <span class="tlaGNC">           6 :           structuredFormatting == other.structuredFormatting &amp;&amp;</span></span>
+<span id="L59"><span class="lineNum">      59</span> <span class="tlaGNC">           6 :           listEquals(terms, other.terms) &amp;&amp;</span></span>
+<span id="L60"><span class="lineNum">      60</span> <span class="tlaGNC">           6 :           distanceMeters == other.distanceMeters &amp;&amp;</span></span>
+<span id="L61"><span class="lineNum">      61</span> <span class="tlaGNC">           6 :           placeId == other.placeId &amp;&amp;</span></span>
+<span id="L62"><span class="lineNum">      62</span> <span class="tlaGNC">           6 :           listEquals(types, other.types);</span></span>
+<span id="L63"><span class="lineNum">      63</span>              : </span>
+<span id="L64"><span class="lineNum">      64</span> <span class="tlaGNC">           1 :   @override</span></span>
+<span id="L65"><span class="lineNum">      65</span>              :   int get hashCode =&gt;</span>
+<span id="L66"><span class="lineNum">      66</span> <span class="tlaGNC">           3 :       description.hashCode ^</span></span>
+<span id="L67"><span class="lineNum">      67</span> <span class="tlaGNC">           3 :       matchedSubstrings.hashCode ^</span></span>
+<span id="L68"><span class="lineNum">      68</span> <span class="tlaGNC">           3 :       structuredFormatting.hashCode ^</span></span>
+<span id="L69"><span class="lineNum">      69</span> <span class="tlaGNC">           3 :       terms.hashCode ^</span></span>
+<span id="L70"><span class="lineNum">      70</span> <span class="tlaGNC">           3 :       distanceMeters.hashCode ^</span></span>
+<span id="L71"><span class="lineNum">      71</span> <span class="tlaGNC">           3 :       placeId.hashCode ^</span></span>
+<span id="L72"><span class="lineNum">      72</span> <span class="tlaGNC">           2 :       types.hashCode;</span></span>
+<span id="L73"><span class="lineNum">      73</span>              : }</span>
+        </pre>
+              </td>
+            </tr>
+          </table>
+          <br>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="ruler"><img src="../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+            <tr><td class="versionInfo">Generated by: <a href="https://github.com//linux-test-project/lcov" target="_parent">LCOV version 2.0-1</a></td></tr>
+          </table>
+          <br>
+
+</body>
+</html>
