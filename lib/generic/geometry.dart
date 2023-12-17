@@ -1,4 +1,4 @@
-import 'package:google_maps_api/generic/bounds.dart';
+import 'package:google_maps_api_flutter/generic/bounds.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 /// An object describing the location.

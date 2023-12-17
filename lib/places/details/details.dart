@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:google_maps_api/places/details/response/place_details_status.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_status.dart';
 import 'package:http/http.dart' as http;
-import 'package:google_maps_api/places/details/request/place_details_request_options.dart';
-import 'package:google_maps_api/places/details/response/place_details_response.dart';
+import 'package:google_maps_api_flutter/places/details/request/place_details_request_options.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_response.dart';
 
 class DetailsService {
   final String apiKey;

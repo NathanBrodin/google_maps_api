@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_matched_substring.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_prediction.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_response.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_structured_format.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_term.dart';
-import 'package:google_maps_api/places/autocomplete/response/places_autocomplete_status.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_matched_substring.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_prediction.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_response.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_structured_format.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_term.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/places_autocomplete_status.dart';
 
 import '../../mocks/mock_place_autocomplete_response.dart';
 

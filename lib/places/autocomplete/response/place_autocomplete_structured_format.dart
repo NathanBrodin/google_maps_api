@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_matched_substring.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_matched_substring.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place_autocomplete_structured_format.g.dart';

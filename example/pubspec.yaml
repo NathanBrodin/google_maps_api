@@ -1,4 +1,4 @@
-name: google_maps_api_example
+name: google_maps_api_flutter_example
 description: Demomstrates how to use the google_maps_api package.
 
 publish_to: 'none'
@@ -16,7 +16,7 @@ dependencies:
 
   flutter_dotenv: ^5.1.0
   google_maps_flutter: ^2.5.0
-  google_maps_api:
+  google_maps_api_flutter:
     path: ../
 
 dev_dependencies:

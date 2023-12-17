@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'package:flutter/material.dart';
-import 'package:google_maps_api/places/autocomplete/request/place_autocomplete_request_options.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_prediction.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/widgets/autocomplete/place_autocomplete.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/request/place_autocomplete_request_options.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_prediction.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/widgets/autocomplete/place_autocomplete.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class FullPlaceAutocompleteExample extends StatefulWidget {

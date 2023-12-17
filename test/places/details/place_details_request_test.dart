@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/places/details/request/place_details_request_options.dart';
+import 'package:google_maps_api_flutter/places/details/request/place_details_request_options.dart';
 
 void main() {
   group("GoogleMapsAPI place details options", () {

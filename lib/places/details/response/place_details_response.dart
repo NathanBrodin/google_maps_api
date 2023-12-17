@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/places/details/response/place_details_status.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_status.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place_details_response.g.dart';

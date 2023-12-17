@@ -1,4 +1,4 @@
-import 'package:google_maps_api/places/details/response/place_opening_hours_period_detail.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period_detail.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place_opening_hours_period.g.dart';

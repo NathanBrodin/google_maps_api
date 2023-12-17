@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_prediction.dart';
-import 'package:google_maps_api/places/autocomplete/response/places_autocomplete_status.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_prediction.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/places_autocomplete_status.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place_autocomplete_response.g.dart';

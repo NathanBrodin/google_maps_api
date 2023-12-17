@@ -1,10 +1,10 @@
-library google_maps_api;
+library google_maps_api_flutter;
 
-import 'package:google_maps_api/places/places.dart';
+import 'package:google_maps_api_flutter/places/places.dart';
 import 'package:http/http.dart' as http;
 
-export 'package:google_maps_api/places/autocomplete/response/place_autocomplete_response.dart';
-export 'package:google_maps_api/places/autocomplete/request/place_autocomplete_request_options.dart';
+export 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_response.dart';
+export 'package:google_maps_api_flutter/places/autocomplete/request/place_autocomplete_request_options.dart';
 
 /// GoogleMapsApi instance.
 /// You must provide your API key, enabled for web requests.

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:google_maps_api/widgets/autocomplete/place_autocomplete.dart';
+import 'package:google_maps_api_flutter/widgets/autocomplete/place_autocomplete.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/testing.dart';

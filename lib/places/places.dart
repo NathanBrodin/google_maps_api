@@ -1,9 +1,9 @@
-import 'package:google_maps_api/places/autocomplete/autocomplete.dart';
-import 'package:google_maps_api/places/autocomplete/request/place_autocomplete_request_options.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_response.dart';
-import 'package:google_maps_api/places/details/details.dart';
-import 'package:google_maps_api/places/details/request/place_details_request_options.dart';
-import 'package:google_maps_api/places/details/response/place_details_response.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/autocomplete.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/request/place_autocomplete_request_options.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_response.dart';
+import 'package:google_maps_api_flutter/places/details/details.dart';
+import 'package:google_maps_api_flutter/places/details/request/place_details_request_options.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_response.dart';
 import 'package:http/http.dart' as http;
 
 /// https://developers.google.com/maps/documentation/places/web-service/overview

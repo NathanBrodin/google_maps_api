@@ -1,15 +1,15 @@
-import 'package:google_maps_api/generic/address_component.dart';
-import 'package:google_maps_api/generic/bounds.dart';
-import 'package:google_maps_api/generic/geometry.dart';
-import 'package:google_maps_api/generic/plus_code.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/places/details/response/place_details_response.dart';
-import 'package:google_maps_api/places/details/response/place_details_status.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours_period.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours_period_detail.dart';
-import 'package:google_maps_api/places/details/response/place_photo.dart';
-import 'package:google_maps_api/places/details/response/place_review.dart';
+import 'package:google_maps_api_flutter/generic/address_component.dart';
+import 'package:google_maps_api_flutter/generic/bounds.dart';
+import 'package:google_maps_api_flutter/generic/geometry.dart';
+import 'package:google_maps_api_flutter/generic/plus_code.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_response.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_status.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period_detail.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_photo.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_review.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 const jsonPlaceDetailsResponse = {

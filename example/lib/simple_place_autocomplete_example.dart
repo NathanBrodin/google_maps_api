@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/widgets/autocomplete/place_autocomplete.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/widgets/autocomplete/place_autocomplete.dart';
 
 class SimplePlaceAutocompleteExample extends StatefulWidget {
   const SimplePlaceAutocompleteExample({super.key});

@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/places/details/request/place_details_request_options.dart';
+import 'package:google_maps_api_flutter/places/details/request/place_details_request_options.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
-import 'package:google_maps_api/google_maps_api.dart';
+import 'package:google_maps_api_flutter/google_maps_api.dart';
 import '../../mocks/mock_place_details_response.dart';
 
 void main() {
@@ -27,7 +27,8 @@ void main() {
       );
 
       // Assert
-      expect(capturedRequest.url.toString(), "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&key=MY_API_KEY");
+      expect(capturedRequest.url.toString(),
+          "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&key=MY_API_KEY");
     });
 
     test("placeDetails response is returning the correct object", () async {
@@ -48,7 +49,8 @@ void main() {
       expect(result, placeDetailsResponse);
     });
 
-    test("placeDetails request with option is making the correct request", () async {
+    test("placeDetails request with option is making the correct request",
+        () async {
       // Arrange
       late http.Request capturedRequest;
       final client = MockClient((request) async {
@@ -69,7 +71,8 @@ void main() {
       );
 
       // Assert
-      expect(capturedRequest.url.toString(), "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&language=fr&key=MY_API_KEY");
+      expect(capturedRequest.url.toString(),
+          "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJN1t_tDeuEmsRUsoyG83frY4&fields=name,rating,formatted_phone_number&language=fr&key=MY_API_KEY");
     });
 
     test("placeDetails with options response is returning the correct object",

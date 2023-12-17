@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/google_maps_api.dart';
+import 'package:google_maps_api_flutter/google_maps_api.dart';
 
 void main() {
   group("GoogleMapsApi class test", () {

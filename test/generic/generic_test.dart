@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/generic/address_component.dart';
-import 'package:google_maps_api/generic/bounds.dart';
-import 'package:google_maps_api/generic/geometry.dart';
-import 'package:google_maps_api/generic/plus_code.dart';
+import 'package:google_maps_api_flutter/generic/address_component.dart';
+import 'package:google_maps_api_flutter/generic/bounds.dart';
+import 'package:google_maps_api_flutter/generic/geometry.dart';
+import 'package:google_maps_api_flutter/generic/plus_code.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {

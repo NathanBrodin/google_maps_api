@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
-import 'package:google_maps_api/google_maps_api.dart';
+import 'package:google_maps_api_flutter/google_maps_api.dart';
 
 import '../../mocks/mock_place_autocomplete_response.dart';
 
@@ -28,7 +28,8 @@ void main() {
       );
 
       // Assert
-      expect(capturedRequest.url.toString(), "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Paris,%20Fr&key=MY_API_KEY");
+      expect(capturedRequest.url.toString(),
+          "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Paris,%20Fr&key=MY_API_KEY");
     });
 
     test("placeAutocomplete response is returning the correct object",
@@ -50,7 +51,8 @@ void main() {
       expect(result, placesAutocompleteResponse);
     });
 
-    test("placeAutocomplete request with options is making the correct request", () async {
+    test("placeAutocomplete request with options is making the correct request",
+        () async {
       // Arrange
       late http.Request capturedRequest;
       final client = MockClient((request) async {
@@ -74,7 +76,8 @@ void main() {
           ));
 
       // Assert
-      expect(capturedRequest.url.toString(), "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Paris&components=country:fr%7Ccountry:en%7Ccountry:es&language=fr&location=48.8584%252.2945&offset=3&radius=12.0&key=MY_API_KEY");
+      expect(capturedRequest.url.toString(),
+          "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Paris&components=country:fr%7Ccountry:en%7Ccountry:es&language=fr&location=48.8584%252.2945&offset=3&radius=12.0&key=MY_API_KEY");
     });
 
     test(

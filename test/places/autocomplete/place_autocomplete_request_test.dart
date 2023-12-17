@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/places/autocomplete/request/place_autocomplete_request_options.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/request/place_autocomplete_request_options.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {

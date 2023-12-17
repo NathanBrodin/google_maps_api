@@ -1,10 +1,10 @@
-import 'package:google_maps_api/google_maps_api.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_prediction.dart';
-import 'package:google_maps_api/places/autocomplete/response/places_autocomplete_status.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/places/details/response/place_details_response.dart';
-import 'package:google_maps_api/places/details/response/place_details_status.dart';
-import 'package:google_maps_api/widgets/autocomplete/debounce.dart';
+import 'package:google_maps_api_flutter/google_maps_api.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_prediction.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/places_autocomplete_status.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_response.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_status.dart';
+import 'package:google_maps_api_flutter/widgets/autocomplete/debounce.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 

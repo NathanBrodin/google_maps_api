@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:google_maps_api/places/autocomplete/response/places_autocomplete_status.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/places_autocomplete_status.dart';
 import 'package:http/http.dart' as http;
-import 'package:google_maps_api/places/autocomplete/request/place_autocomplete_request_options.dart';
-import 'package:google_maps_api/places/autocomplete/response/place_autocomplete_response.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/request/place_autocomplete_request_options.dart';
+import 'package:google_maps_api_flutter/places/autocomplete/response/place_autocomplete_response.dart';
 
 class AutocompleteService {
   final String apiKey;

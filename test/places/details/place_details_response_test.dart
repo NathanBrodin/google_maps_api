@@ -1,14 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_maps_api/places/details/response/place.dart';
-import 'package:google_maps_api/places/details/response/place_details_response.dart';
-import 'package:google_maps_api/places/details/response/place_details_status.dart';
-import 'package:google_maps_api/places/details/response/place_editorial_summary.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours_period.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours_period_detail.dart';
-import 'package:google_maps_api/places/details/response/place_photo.dart';
-import 'package:google_maps_api/places/details/response/place_review.dart';
-import 'package:google_maps_api/places/details/response/place_special_day.dart';
+import 'package:google_maps_api_flutter/places/details/response/place.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_response.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_details_status.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_editorial_summary.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period_detail.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_photo.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_review.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_special_day.dart';
 
 import '../../mocks/mock_place_details_response.dart';
 

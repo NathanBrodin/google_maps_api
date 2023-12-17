@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours_period.dart';
-import 'package:google_maps_api/places/details/response/place_special_day.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours_period.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_special_day.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place_opening_hours.g.dart';

@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_api/generic/address_component.dart';
-import 'package:google_maps_api/generic/geometry.dart';
-import 'package:google_maps_api/places/details/response/place_editorial_summary.dart';
-import 'package:google_maps_api/places/details/response/place_opening_hours.dart';
-import 'package:google_maps_api/places/details/response/place_photo.dart';
-import 'package:google_maps_api/places/details/response/place_review.dart';
-import 'package:google_maps_api/generic/plus_code.dart';
+import 'package:google_maps_api_flutter/generic/address_component.dart';
+import 'package:google_maps_api_flutter/generic/geometry.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_editorial_summary.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_opening_hours.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_photo.dart';
+import 'package:google_maps_api_flutter/places/details/response/place_review.dart';
+import 'package:google_maps_api_flutter/generic/plus_code.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'place.g.dart';
