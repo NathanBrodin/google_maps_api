@@ -1,6 +1,6 @@
 name: google_maps_api_flutter
-description: Integration of Google Maps API for Flutter
-version: 0.0.1
+description: Integration of Google Maps API for Flutter. This package seamlessly integrates the Google Maps API into your Flutter application, offering type-safe requests and responses, complemented with versatile widgets.
+version: 0.0.2
 homepage: https://pub.dev/publishers/nathanbrodin.com/packages
 
 environment:
