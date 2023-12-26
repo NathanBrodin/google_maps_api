@@ -31,5 +31,3 @@ coverage/
 .dart_tool/
 .packages
 build/
-
-example/.env.json
