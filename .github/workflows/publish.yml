@@ -14,10 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
-      - name: Create environment file
-        run: echo "apiKey =" > example/.env
-      - name: Verify environment file
-        run: cat example/.env
       - name: Install dependencies
         run: flutter pub get
       - name: Publish Dry Run

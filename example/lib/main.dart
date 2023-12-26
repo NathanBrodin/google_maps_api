@@ -3,7 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_maps_api_flutter_example/full_place_autocomplete_example.dart';
 
 Future main() async {
-  await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: ".env.example");
 
   runApp(const MyApp());
 }
